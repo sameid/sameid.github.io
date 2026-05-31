@@ -1,323 +1,476 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sameid Usmani — Software Engineer & Builder in Toronto</title>
-<meta name="description" content="Sameid Usmani is a software engineer and product engineering manager in Toronto. Full-stack developer and indie builder behind goalpal, ShiftBuddy, and more.">
-<meta name="author" content="Sameid Usmani">
-<link rel="canonical" href="https://susmani.com/">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Sameid Usmani — Software Engineer & Builder in Toronto</title>
+		<meta
+			name="description"
+			content="Sameid Usmani is a software engineer and product engineering manager in Toronto. Full-stack developer and indie builder behind goalpal, ShiftBuddy, and more."
+		/>
+		<meta name="author" content="Sameid Usmani" />
+		<link rel="canonical" href="https://sameidusmani.com/" />
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://susmani.com/">
-<meta property="og:title" content="Sameid Usmani — Software Engineer & Builder in Toronto">
-<meta property="og:description" content="Software engineer and product engineering manager in Toronto. Full-stack developer and indie builder behind goalpal, ShiftBuddy, and more.">
-<meta property="og:image" content="https://susmani.com/og-image.png">
-<meta property="og:site_name" content="Sameid Usmani">
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://sameidusmani.com/" />
+		<meta property="og:title" content="Sameid Usmani — Software Engineer & Builder in Toronto" />
+		<meta
+			property="og:description"
+			content="Software engineer and product engineering manager in Toronto. Full-stack developer and indie builder behind goalpal, ShiftBuddy, and more."
+		/>
+		<meta property="og:image" content="https://sameidusmani.com/og-image.png" />
+		<meta property="og:site_name" content="Sameid Usmani" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sameid Usmani — Software Engineer & Builder in Toronto">
-<meta name="twitter:description" content="Software engineer and product engineering manager in Toronto. Full-stack developer and indie builder behind goalpal, ShiftBuddy, and more.">
-<meta name="twitter:image" content="https://susmani.com/og-image.png">
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Sameid Usmani — Software Engineer & Builder in Toronto" />
+		<meta
+			name="twitter:description"
+			content="Software engineer and product engineering manager in Toronto. Full-stack developer and indie builder behind goalpal, ShiftBuddy, and more."
+		/>
+		<meta name="twitter:image" content="https://sameidusmani.com/og-image.png" />
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Sameid Usmani",
-  "url": "https://susmani.com/",
-  "image": "https://susmani.com/og-image.png",
-  "jobTitle": "Product Engineering Manager",
-  "worksFor": { "@type": "Organization", "name": "DemandHub" },
-  "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
-  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Ottawa" },
-  "email": "mailto:sameid.usmani@gmail.com",
-  "sameAs": [
-    "https://github.com/sameid",
-    "https://linkedin.com/in/sameidusmani"
-  ]
-}
-</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Sameid Usmani",
+				"url": "https://sameidusmani.com/",
+				"image": "https://sameidusmani.com/og-image.png",
+				"jobTitle": "Product Engineering Manager",
+				"worksFor": { "@type": "Organization", "name": "DemandHub" },
+				"address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+				"alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Ottawa" },
+				"email": "mailto:sameid.usmani@gmail.com",
+				"sameAs": ["https://github.com/sameid", "https://linkedin.com/in/sameidusmani"]
+			}
+		</script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --accent: #7aa2ff;
-    --bg: #121212;
-    --text: #e8e8e8;
-    --muted: #999;
-    --line: #2a2a2a;
-  }
-  [data-theme="light"] {
-    --accent: #2563eb;
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #666;
-    --line: #e5e5e5;
-  }
-  :root {
-    --serif: "Lora", Georgia, "Times New Roman", serif;
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  }
-  * { box-sizing: border-box; }
-  body {
-    font-family: var(--serif);
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.65;
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 2rem 1.25rem 4rem;
-    font-size: 18px;
-    transition: background 0.2s, color 0.2s;
-  }
-  nav {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-    font-size: 0.95rem;
-    font-family: var(--serif);
-  }
-  nav .spacer { flex: 1; }
-  nav a {
-    color: var(--muted);
-    text-decoration: none;
-  }
-  nav a:hover { color: var(--accent); }
-  #theme-toggle {
-    background: none;
-    border: 1px solid var(--line);
-    color: var(--muted);
-    border-radius: 999px;
-    padding: 0.25rem 0.7rem;
-    font-size: 0.85rem;
-    cursor: pointer;
-    font-family: inherit;
-  }
-  #theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  h1 { font-size: 2.3rem; line-height: 1.25; margin: 0 0 1.5rem; font-weight: normal; }
-  h2 {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    margin: 3rem 0 1.25rem;
-    font-weight: 600;
-    font-family: var(--sans);
-  }
-  p { margin: 0 0 1rem; }
-  hr { border: none; border-top: 1px solid var(--line); margin: 3rem 0 0; }
-  .job { margin-bottom: 1.75rem; }
-  .job-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .job-title { font-size: 1.15rem; font-weight: 600; }
-  .job-meta { color: var(--muted); font-size: 0.85rem; white-space: nowrap; font-family: var(--sans); }
-  .company { color: var(--muted); font-size: 0.95rem; margin-top: 0.1rem; }
-  .roles { margin: 0.5rem 0 0; padding: 0; list-style: none; }
-  .roles li { color: var(--muted); font-size: 1rem; }
-  .roles li span { color: var(--text); }
-  .project { margin-bottom: 1rem; }
-  .project-name { font-size: 1.1rem; font-weight: 600; }
-  .project-desc { color: var(--muted); font-size: 1rem; }
-  .archived { color: var(--muted); font-weight: normal; font-size: 0.8rem; font-style: italic; opacity: 0.65; }
-  .wip { color: var(--accent); font-weight: normal; font-size: 0.8rem; font-style: italic; opacity: 0.85; }
-  .aka { color: var(--muted); font-weight: normal; font-size: 0.85rem; font-style: italic; opacity: 0.7; }
-  .skills { color: var(--muted); }
-  .skill-group { display: flex; gap: 0.75rem; margin-bottom: 0.6rem; align-items: baseline; flex-wrap: wrap; }
-  .skill-label { font-family: var(--sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); flex: 0 0 9rem; }
-  .skill-list { color: var(--text); flex: 1; min-width: 12rem; }
-  footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; font-family: var(--sans); }
-</style>
-</head>
-<body>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+		<style>
+			:root {
+				--accent: #7aa2ff;
+				--bg: #121212;
+				--text: #e8e8e8;
+				--muted: #999;
+				--line: #2a2a2a;
+			}
+			[data-theme="light"] {
+				--accent: #2563eb;
+				--bg: #ffffff;
+				--text: #1a1a1a;
+				--muted: #666;
+				--line: #e5e5e5;
+			}
+			:root {
+				--serif: "Lora", Georgia, "Times New Roman", serif;
+				--sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+			}
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				font-family: var(--serif);
+				background: var(--bg);
+				color: var(--text);
+				line-height: 1.65;
+				max-width: 680px;
+				margin: 0 auto;
+				padding: 2rem 1.25rem 4rem;
+				font-size: 18px;
+				transition:
+					background 0.2s,
+					color 0.2s;
+			}
+			nav {
+				display: flex;
+				align-items: center;
+				gap: 1.5rem;
+				margin-bottom: 3rem;
+				font-size: 0.95rem;
+				font-family: var(--serif);
+			}
+			nav .spacer {
+				flex: 1;
+			}
+			.nav-primary,
+			.nav-secondary {
+				display: flex;
+				align-items: center;
+				gap: 1.5rem;
+			}
+			nav a {
+				color: var(--muted);
+				text-decoration: none;
+			}
+			nav a:hover {
+				color: var(--accent);
+			}
+			@media (max-width: 540px) {
+				nav {
+					flex-wrap: wrap;
+					gap: 1rem 1.25rem;
+				}
+				nav .spacer {
+					display: none;
+				}
+				.nav-primary {
+					flex: 1 0 100%;
+					flex-wrap: wrap;
+				}
+				.nav-secondary {
+					flex: 1 0 100%;
+				}
+			}
+			#theme-toggle {
+				background: none;
+				border: 1px solid var(--line);
+				color: var(--muted);
+				border-radius: 999px;
+				padding: 0.25rem 0.7rem;
+				font-size: 0.85rem;
+				cursor: pointer;
+				font-family: inherit;
+			}
+			#theme-toggle:hover {
+				color: var(--accent);
+				border-color: var(--accent);
+			}
+			a {
+				color: var(--accent);
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			h1 {
+				font-size: 2.3rem;
+				line-height: 1.25;
+				margin: 0 0 1.5rem;
+				font-weight: normal;
+			}
+			h2 {
+				font-size: 0.8rem;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				color: var(--muted);
+				margin: 3rem 0 1.25rem;
+				font-weight: 600;
+				font-family: var(--sans);
+			}
+			p {
+				margin: 0 0 1rem;
+			}
+			hr {
+				border: none;
+				border-top: 1px solid var(--line);
+				margin: 3rem 0 0;
+			}
+			.job {
+				margin-bottom: 1.75rem;
+			}
+			.job-head {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				gap: 1rem;
+				flex-wrap: wrap;
+			}
+			.job-title {
+				font-size: 1.15rem;
+				font-weight: 600;
+			}
+			.job-meta {
+				color: var(--muted);
+				font-size: 0.85rem;
+				white-space: nowrap;
+				font-family: var(--sans);
+			}
+			.company {
+				color: var(--muted);
+				font-size: 0.95rem;
+				margin-top: 0.1rem;
+			}
+			.roles {
+				margin: 0.5rem 0 0;
+				padding: 0;
+				list-style: none;
+			}
+			.roles li {
+				color: var(--muted);
+				font-size: 1rem;
+			}
+			.roles li span {
+				color: var(--text);
+			}
+			.project {
+				margin-bottom: 1rem;
+			}
+			.project-name {
+				font-size: 1.1rem;
+				font-weight: 600;
+			}
+			.project-desc {
+				color: var(--muted);
+				font-size: 1rem;
+			}
+			.archived {
+				color: var(--muted);
+				font-weight: normal;
+				font-size: 0.8rem;
+				font-style: italic;
+				opacity: 0.65;
+			}
+			.wip {
+				color: var(--accent);
+				font-weight: normal;
+				font-size: 0.8rem;
+				font-style: italic;
+				opacity: 0.85;
+			}
+			.aka {
+				color: var(--muted);
+				font-weight: normal;
+				font-size: 0.85rem;
+				font-style: italic;
+				opacity: 0.7;
+			}
+			.skills {
+				color: var(--muted);
+			}
+			.skill-group {
+				display: flex;
+				gap: 0.75rem;
+				margin-bottom: 0.6rem;
+				align-items: baseline;
+				flex-wrap: wrap;
+			}
+			.skill-label {
+				font-family: var(--sans);
+				font-size: 0.75rem;
+				text-transform: uppercase;
+				letter-spacing: 0.06em;
+				color: var(--muted);
+				flex: 0 0 9rem;
+			}
+			.skill-list {
+				color: var(--text);
+				flex: 1;
+				min-width: 12rem;
+			}
+			footer {
+				margin-top: 3rem;
+				color: var(--muted);
+				font-size: 0.85rem;
+				font-family: var(--sans);
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-primary">
+				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<span class="spacer"></span>
+			<div class="nav-secondary">
+				<a href="SameidUsmani_20240108.pdf" target="_blank" rel="noopener">Resume ↗</a>
+				<button id="theme-toggle" aria-label="Toggle color theme">Light</button>
+			</div>
+		</nav>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-  <span class="spacer"></span>
-  <a href="SameidUsmani_20240108.pdf" target="_blank" rel="noopener">Resume ↗</a>
-  <button id="theme-toggle" aria-label="Toggle color theme">Light</button>
-</nav>
+		<h1>Hi, I'm Sameid Usmani — software engineer and builder.</h1>
 
-<h1>Hi, I'm Sameid Usmani — software engineer and builder.</h1>
+		<section id="about">
+			<p>
+				I'm a Product Engineering Manager at DemandHub, where I work across the full stack — building features, shipping the core platform, and mentoring
+				engineers. On the side, I'm always building something or learning classical Arabic. I studied Computer Science at the University of Ottawa, and now I
+				live in Toronto.
+			</p>
+		</section>
 
-<section id="about">
-  <p>I'm a Product Engineering Manager at DemandHub, where I work across the full stack — building features, shipping the core platform, and mentoring engineers. On the side, I'm always building something. I'm also a beginner classical Arabic student. I studied Computer Science at the University of Ottawa, and now I live in Toronto.</p>
-</section>
+		<h2 id="experience">Experience</h2>
 
-<h2 id="experience">Experience</h2>
+		<div class="job">
+			<div class="job-head">
+				<span class="job-title">DemandHub Inc.</span>
+				<span class="job-meta">2018 – Present</span>
+			</div>
+			<div class="company">Mississauga, ON</div>
+			<ul class="roles">
+				<li><span>Product Engineering Manager</span> · Sept 2023 – Present</li>
+				<li><span>Lead Developer</span> · Apr 2021 – Sept 2023</li>
+				<li><span>Senior Full Stack Engineer</span> · Apr 2018 – Apr 2021</li>
+			</ul>
+			<p class="project-desc" style="margin-top: 0.6rem">
+				Ideated products with the founding team, led release schedules and AWS production environments, built a 2-way SMB messaging architecture and a React
+				Native app from scratch, and mentored engineers through code reviews and design.
+			</p>
+		</div>
 
-<div class="job">
-  <div class="job-head">
-    <span class="job-title">DemandHub Inc.</span>
-    <span class="job-meta">2018 – Present</span>
-  </div>
-  <div class="company">Mississauga, ON</div>
-  <ul class="roles">
-    <li><span>Product Engineering Manager</span> · Sept 2023 – Present</li>
-    <li><span>Lead Developer</span> · Apr 2021 – Sept 2023</li>
-    <li><span>Senior Full Stack Engineer</span> · Apr 2018 – Apr 2021</li>
-  </ul>
-  <p class="project-desc" style="margin-top:0.6rem">Ideated products with the founding team, led release schedules and AWS production environments, built a 2-way SMB messaging architecture and a React Native app from scratch, and mentored engineers through code reviews and design.</p>
-</div>
+		<div class="job">
+			<div class="job-head">
+				<span class="job-title">TradeRev Inc. <span class="aka">(now known as OpenLane)</span></span>
+				<span class="job-meta">Aug 2016 – Apr 2018</span>
+			</div>
+			<div class="company">Toronto, ON · Full Stack Developer</div>
+			<p class="project-desc" style="margin-top: 0.6rem">
+				Built features and services for the TradeRev platform — Angular research tools on the front end, Node.js and Grails APIs on the back end, and workflow
+				tooling for the team.
+			</p>
+		</div>
 
-<div class="job">
-  <div class="job-head">
-    <span class="job-title">TradeRev Inc. <span class="aka">(now known as OpenLane)</span></span>
-    <span class="job-meta">Aug 2016 – Apr 2018</span>
-  </div>
-  <div class="company">Toronto, ON · Full Stack Developer</div>
-  <p class="project-desc" style="margin-top:0.6rem">Built features and services for the TradeRev platform — Angular research tools on the front end, Node.js and Grails APIs on the back end, and workflow tooling for the team.</p>
-</div>
+		<div class="job">
+			<div class="job-head">
+				<span class="job-title">AppVine Inc. <span class="aka">(now known as LimeLight Inc.)</span></span>
+				<span class="job-meta">Jan 2016 – Aug 2016</span>
+			</div>
+			<div class="company">Mississauga, ON · Web Developer</div>
+			<p class="project-desc" style="margin-top: 0.6rem">
+				Built a dashboard and charting tool for visualizing financial data, rebuilt the core Excel-like grid system in TypeScript, and made various UI/UX
+				enhancements to the Limelight platform.
+			</p>
+		</div>
 
-<div class="job">
-  <div class="job-head">
-    <span class="job-title">AppVine Inc. <span class="aka">(now known as LimeLight Inc.)</span></span>
-    <span class="job-meta">Jan 2016 – Aug 2016</span>
-  </div>
-  <div class="company">Mississauga, ON · Web Developer</div>
-  <p class="project-desc" style="margin-top:0.6rem">Built a dashboard and charting tool for visualizing financial data, rebuilt the core Excel-like grid system in TypeScript, and made various UI/UX enhancements to the Limelight platform.</p>
-</div>
+		<div class="job">
+			<div class="job-head">
+				<span class="job-title">Klipfolio Inc.</span>
+				<span class="job-meta">May 2013 – Dec 2014</span>
+			</div>
+			<div class="company">Ottawa, ON · Web Developer</div>
+			<p class="project-desc" style="margin-top: 0.6rem">
+				Developed features for the Klipfolio Dashboard, built backend and server infrastructure tools, created a testing framework for the formula service, and
+				improved realtime dashboard performance.
+			</p>
+		</div>
 
-<div class="job">
-  <div class="job-head">
-    <span class="job-title">Klipfolio Inc.</span>
-    <span class="job-meta">May 2013 – Dec 2014</span>
-  </div>
-  <div class="company">Ottawa, ON · Web Developer</div>
-  <p class="project-desc" style="margin-top:0.6rem">Developed features for the Klipfolio Dashboard, built backend and server infrastructure tools, created a testing framework for the formula service, and improved realtime dashboard performance.</p>
-</div>
+		<h2 id="education">Education</h2>
+		<div class="job">
+			<div class="job-title">University of Ottawa</div>
+			<p class="project-desc" style="margin-top: 0.2rem">
+				Honours Bachelor of Science with Specialization in Computer Science (COOP), Management and Entrepreneurship Option.
+			</p>
+		</div>
 
-<h2 id="education">Education</h2>
-<div class="job">
-  <div class="job-title">University of Ottawa</div>
-  <p class="project-desc" style="margin-top:0.2rem">Honours Bachelor of Science with Specialization in Computer Science (COOP), Management and Entrepreneurship Option.</p>
-</div>
+		<h2 id="projects">Projects</h2>
 
-<h2 id="projects">Projects</h2>
+		<div class="project">
+			<div class="project-name"><a href="https://codepal.sh" target="_blank" rel="noopener">codepal.sh</a> (2026) <span class="wip">WIP</span></div>
+			<div class="project-desc">A coding harness for your phone. In progress.</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://goalpal.me" target="_blank" rel="noopener">goalpal</a> (2026)</div>
+			<div class="project-desc">
+				A quiet, offline-first iOS goal and habit tracker — you define what matters and it gives an honest daily life score. No accounts, no cloud, no tracking.
+			</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://sameidusmani.com/slopdiff" target="_blank" rel="noopener">slopdiff</a> (2026)</div>
+			<div class="project-desc">A simple diff tool written in JavaScript, used alongside OpenCode.</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://github.com/sameid/sam-nvim" target="_blank" rel="noopener">sam-nvim</a> (2025)</div>
+			<div class="project-desc">A simple and minimal Neovim configuration in Lua that just works — sensible plugins, a clean UI, and easy setup.</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://sameidusmani.com/sarf" target="_blank" rel="noopener">Sarf</a> (2025)</div>
+			<div class="project-desc">Small flash card PWA app for beginner Arabic students. Vocab testing from the popular books.</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://github.com/sameid/service-fetch" target="_blank" rel="noopener">service-fetch</a> (2024)</div>
+			<div class="project-desc">A small frontend library that makes REST requests easy.</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://apps.apple.com/us/app/shiftbuddy/id6456526015" target="_blank" rel="noopener">ShiftBuddy</a> (2022)</div>
+			<div class="project-desc">
+				A free iOS app for gig workers to track shifts and invoice easily — tap to clock in and out, then send a PDF or Excel invoice to get paid.
+			</div>
+		</div>
+		<div class="project">
+			<div class="project-name">ConnectShop (2020)</div>
+			<div class="project-desc">A middleware server piping tens of thousands of products from vendors to a Shopify store, hosted on AWS.</div>
+		</div>
+		<div class="project">
+			<div class="project-name">SRJ Workflow Manager (2019)</div>
+			<div class="project-desc">A fully featured accounting workflow tool built with ReactJS and Node.js, hosted on AWS.</div>
+		</div>
+		<div class="project">
+			<div class="project-name">Project Ameen (2019) <span class="archived">Archived</span></div>
+			<div class="project-desc">An interactive Quran-sharing app written in React Native and Twilio Video.</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://github.com/sameid/shootyroads" target="_blank" rel="noopener">Shooty Roads</a> (2017)</div>
+			<div class="project-desc">A web-based realtime multiplayer shooter made in pure JavaScript and Node.js, hosted on AWS.</div>
+		</div>
+		<div class="project">
+			<div class="project-name">Lonely Blue (2013) <span class="archived">Archived</span></div>
+			<div class="project-desc">An Android shape shooter written in Java with LibGDX.</div>
+		</div>
+		<div class="project">
+			<div class="project-name"><a href="https://github.com/sameid/pullplaylist" target="_blank" rel="noopener">PullPlaylist</a> (2013)</div>
+			<div class="project-desc">A Node.js library that downloads all the videos in a YouTube playlist and converts them to mp3.</div>
+		</div>
+		<div class="project">
+			<div class="project-name">Close Call (2012) <span class="archived">Archived</span></div>
+			<div class="project-desc">An addictive tilt shooter written in JavaScript with CocoonJS and Cordova.</div>
+		</div>
+		<div class="project">
+			<div class="project-name">Boxhead Online (2010) <span class="archived">Archived</span></div>
+			<div class="project-desc">An online multiplayer zombie shooter written in plain Java.</div>
+		</div>
+		<div class="project">
+			<div class="project-name">GroupMe (2009) <span class="archived">Archived</span></div>
+			<div class="project-desc">A small texting app written in Java — join an SMS group from a web app and everyone lands in a shared group SMS thread.</div>
+		</div>
 
-<div class="project">
-  <div class="project-name"><a href="https://codepal.sh" target="_blank" rel="noopener">codepal.sh</a> (2026) <span class="wip">WIP</span></div>
-  <div class="project-desc">A coding harness for your phone. In progress.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://goalpal.me" target="_blank" rel="noopener">goalpal</a> (2026)</div>
-  <div class="project-desc">A quiet, offline-first iOS goal and habit tracker — you define what matters and it gives an honest daily life score. No accounts, no cloud, no tracking.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://sameidusmani.com/slopdiff" target="_blank" rel="noopener">slopdiff</a> (2026)</div>
-  <div class="project-desc">A simple diff tool written in JavaScript, used alongside OpenCode.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://github.com/sameid/sam-nvim" target="_blank" rel="noopener">sam-nvim</a> (2025)</div>
-  <div class="project-desc">A simple and minimal Neovim configuration in Lua that just works — sensible plugins, a clean UI, and easy setup.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://susmani.com/sarf/" target="_blank" rel="noopener">Sarf</a> (2025)</div>
-  <div class="project-desc">Small flash card PWA app for beginner Arabic students. Vocab testing from the popular books.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://github.com/sameid/service-fetch" target="_blank" rel="noopener">service-fetch</a> (2024)</div>
-  <div class="project-desc">A small frontend library that makes REST requests easy.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://apps.apple.com/us/app/shiftbuddy/id6456526015" target="_blank" rel="noopener">ShiftBuddy</a> (2022)</div>
-  <div class="project-desc">A free iOS app for gig workers to track shifts and invoice easily — tap to clock in and out, then send a PDF or Excel invoice to get paid.</div>
-</div>
-<div class="project">
-  <div class="project-name">ConnectShop (2020)</div>
-  <div class="project-desc">A middleware server piping tens of thousands of products from vendors to a Shopify store, hosted on AWS.</div>
-</div>
-<div class="project">
-  <div class="project-name">SRJ Workflow Manager (2019)</div>
-  <div class="project-desc">A fully featured accounting workflow tool built with ReactJS and Node.js, hosted on AWS.</div>
-</div>
-<div class="project">
-  <div class="project-name">Project Ameen (2019) <span class="archived">Archived</span></div>
-  <div class="project-desc">An interactive Quran-sharing app written in React Native and Twilio Video.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://github.com/sameid/shootyroads" target="_blank" rel="noopener">Shooty Roads</a> (2017)</div>
-  <div class="project-desc">A web-based realtime multiplayer shooter made in pure JavaScript and Node.js, hosted on AWS.</div>
-</div>
-<div class="project">
-  <div class="project-name">Lonely Blue (2013) <span class="archived">Archived</span></div>
-  <div class="project-desc">An Android shape shooter written in Java with LibGDX.</div>
-</div>
-<div class="project">
-  <div class="project-name"><a href="https://github.com/sameid/pullplaylist" target="_blank" rel="noopener">PullPlaylist</a> (2013)</div>
-  <div class="project-desc">A Node.js library that downloads all the videos in a YouTube playlist and converts them to mp3.</div>
-</div>
-<div class="project">
-  <div class="project-name">Close Call (2012) <span class="archived">Archived</span></div>
-  <div class="project-desc">An addictive tilt shooter written in JavaScript with CocoonJS and Cordova.</div>
-</div>
-<div class="project">
-  <div class="project-name">Boxhead Online (2010) <span class="archived">Archived</span></div>
-  <div class="project-desc">An online multiplayer zombie shooter written in plain Java.</div>
-</div>
-<div class="project">
-  <div class="project-name">GroupMe (2009) <span class="archived">Archived</span></div>
-  <div class="project-desc">A small texting app written in Java — join an SMS group from a web app and everyone lands in a shared group SMS thread.</div>
-</div>
+		<h2 id="skills">Skills</h2>
+		<div class="skill-group">
+			<div class="skill-label">Languages</div>
+			<div class="skill-list">Java, JavaScript, TypeScript, Python, Groovy, C#, PHP, Swift, Objective-C, HTML/CSS</div>
+		</div>
+		<div class="skill-group">
+			<div class="skill-label">Databases</div>
+			<div class="skill-list">MySQL, MongoDB, DynamoDB, ElasticSearch, Redis (ElastiCache)</div>
+		</div>
+		<div class="skill-group">
+			<div class="skill-label">Frameworks / Libraries</div>
+			<div class="skill-list">
+				React, React Native, Expo, Node.js, Express.js, Grails, Angular.js, Backbone.js, Knockout.js, Durandal, Socket.IO, SockJS, Cordova, PhoneGap, CocoonJS,
+				LibGDX
+			</div>
+		</div>
 
-<h2 id="skills">Skills</h2>
-<div class="skill-group">
-  <div class="skill-label">Languages</div>
-  <div class="skill-list">Java, JavaScript, TypeScript, Python, Groovy, C#, PHP, Swift, Objective-C, HTML/CSS</div>
-</div>
-<div class="skill-group">
-  <div class="skill-label">Databases</div>
-  <div class="skill-list">MySQL, MongoDB, DynamoDB, ElasticSearch, Redis (ElastiCache)</div>
-</div>
-<div class="skill-group">
-  <div class="skill-label">Frameworks / Libraries</div>
-  <div class="skill-list">React, React Native, Expo, Node.js, Express.js, Grails, Angular.js, Backbone.js, Knockout.js, Durandal, Socket.IO, SockJS, Cordova, PhoneGap, CocoonJS, LibGDX</div>
-</div>
+		<h2 id="contact">Contact</h2>
+		<p>
+			<a href="mailto:sameid.usmani@gmail.com">sameid.usmani@gmail.com</a><br />
+			<a href="https://github.com/sameid">github.com/sameid</a><br />
+			<a href="https://linkedin.com/in/sameidusmani">linkedin.com/in/sameidusmani</a>
+		</p>
 
-<h2 id="contact">Contact</h2>
-<p>
-  <a href="mailto:sameid.usmani@gmail.com">sameid.usmani@gmail.com</a><br>
-  <a href="https://github.com/sameid">github.com/sameid</a><br>
-  <a href="https://linkedin.com/in/sameidusmani">linkedin.com/in/sameidusmani</a>
-</p>
+		<footer>© 2026 Sameid Usmani</footer>
 
-<footer>
-  © 2026 Sameid Usmani
-</footer>
-
-<script>
-  (function () {
-    var root = document.documentElement;
-    var btn = document.getElementById('theme-toggle');
-    function apply(theme) {
-      if (theme === 'light') {
-        root.setAttribute('data-theme', 'light');
-        btn.textContent = 'Dark';
-      } else {
-        root.removeAttribute('data-theme');
-        btn.textContent = 'Light';
-      }
-    }
-    apply('dark'); // default to dark
-    btn.addEventListener('click', function () {
-      var isLight = root.getAttribute('data-theme') === 'light';
-      apply(isLight ? 'dark' : 'light');
-    });
-  })();
-</script>
-
-</body>
+		<script>
+			(function () {
+				var root = document.documentElement;
+				var btn = document.getElementById("theme-toggle");
+				function apply(theme) {
+					if (theme === "light") {
+						root.setAttribute("data-theme", "light");
+						btn.textContent = "Dark";
+					} else {
+						root.removeAttribute("data-theme");
+						btn.textContent = "Light";
+					}
+				}
+				apply("dark"); // default to dark
+				btn.addEventListener("click", function () {
+					var isLight = root.getAttribute("data-theme") === "light";
+					apply(isLight ? "dark" : "light");
+				});
+			})();
+		</script>
+	</body>
 </html>
