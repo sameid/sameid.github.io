@@ -167,6 +167,30 @@
 				border-top: 1px solid var(--line);
 				margin: 3rem 0 0;
 			}
+			.about {
+				display: flex;
+				align-items: flex-start;
+				gap: 2rem;
+			}
+			.about p {
+				margin: 0;
+			}
+			.avatar {
+				flex: 0 0 auto;
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: center top;
+			}
+			@media (max-width: 540px) {
+				.about {
+					flex-direction: column-reverse;
+					align-items: center;
+					text-align: left;
+					gap: 1.25rem;
+				}
+			}
 			.job {
 				margin-bottom: 1.75rem;
 			}
@@ -284,12 +308,13 @@
 
 		<h1>Hi, I'm Sameid Usmani — software engineer and builder.</h1>
 
-		<section id="about">
+		<section id="about" class="about">
 			<p>
 				I'm a Product Engineering Manager at DemandHub, where I work across the full stack — building features, shipping the core platform, and mentoring
 				engineers. On the side, I'm always building something or learning classical Arabic. I studied Computer Science at the University of Ottawa, and now I
 				live in Toronto.
 			</p>
+			<img class="avatar" src="profile.jpg" alt="Sameid Usmani" width="120" height="120" />
 		</section>
 
 		<h2 id="experience">Experience</h2>
